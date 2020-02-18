@@ -11,5 +11,19 @@
     Kolom Close adalah harga terakhir/penutup. <br>
     Kolom Adj Close adalah harga terakhir yang sudah disesuaikan. <br>
     Kolom Volume adalah volume trading hari itu. <br>
-    <img href="/image/grafik_TSLA.png">
-3.  
+    <img src="/image/grafik_TSLA.png">
+3.  <b>Data Preparation</b><br>
+    Dataset saya baca dengan CSV Reader, dan saya lakukan splitting.
+    <img>
+    Untuk melakukan splitting, saya menggunakan column splitter, dimana merupakan fungsi untuk membagi satu tabel menjadi dua tabel berbeda. <br>
+    <img src=><br>
+    Tabel pertama saya menggunakan kolom date, open, high, low. Sedangkan tabel kedua menggunakan kolom close, adj close, dan volume. <br>
+    <img><br>
+    Tabel pertama saya write ke csv, dengan CSV Writer.<br>
+    <img><br>
+    Tabel kedua saya write ke database, dengan database writer.<br>
+    <img><br>
+    Untuk melakukan database writer, saya juga harus melakukan koneksi ke database. Karena saya menggunakan mysql, maka saya gunakan MySQL Connector.<br>
+    <img><br>
+    Preparasi data selesai.<br>
+4.  
